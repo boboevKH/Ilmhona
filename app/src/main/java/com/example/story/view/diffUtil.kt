@@ -1,6 +1,7 @@
 package com.example.story
 
 import androidx.recyclerview.widget.DiffUtil
+import com.example.story.model.History
 
 class ItemDiffCallbackHistory : DiffUtil.ItemCallback<History>() {
     override fun areItemsTheSame(

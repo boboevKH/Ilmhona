@@ -1,9 +1,9 @@
-package com.example.story
+package com.example.story.model
 
 import android.graphics.drawable.Drawable
 
 data class History(
     var id: Int,
-    val image: Drawable?,
+    val image: Int,
     var isWatched: Boolean = false
 )

@@ -1,11 +1,11 @@
 package com.example.story
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.story.model.History
 import com.google.android.material.imageview.ShapeableImageView
 
 class RVAdapter: ListAdapter <History, RVAdapter.ViewHolder> (
@@ -24,7 +24,7 @@ ItemDiffCallbackHistory()
                 }
 
                 fun configure(history: History)  {
-                        image.setImageDrawable(history.image)
+                        image.setImageResource(history.image)
 
                         if(history.isWatched) image.strokeWidth = 0F else image.strokeWidth = 10F
                 }
